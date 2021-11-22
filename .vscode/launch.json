@@ -1,0 +1,236 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'crypto_primitives'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=crypto_primitives"
+                ],
+                "filter": {
+                    "name": "crypto_primitives",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'single_step_avd'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=single_step_avd"
+                ],
+                "filter": {
+                    "name": "single_step_avd",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'rsa'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=rsa"
+                ],
+                "filter": {
+                    "name": "rsa",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'full_history_avd'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=full_history_avd"
+                ],
+                "filter": {
+                    "name": "full_history_avd",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug integration test 'rsa_groth16_test'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--test=rsa_groth16_test",
+                    "--package=full_history_avd"
+                ],
+                "filter": {
+                    "name": "rsa_groth16_test",
+                    "kind": "test"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug benchmark 'update_epoch_0_rsa'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bench=update_epoch_0_rsa",
+                    "--package=benches"
+                ],
+                "filter": {
+                    "name": "update_epoch_0_rsa",
+                    "kind": "bench"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug benchmark 'update_epoch_0_mt'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bench=update_epoch_0_mt",
+                    "--package=benches"
+                ],
+                "filter": {
+                    "name": "update_epoch_0_mt",
+                    "kind": "bench"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug benchmark 'aggregate_groth16'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bench=aggregate_groth16",
+                    "--package=benches"
+                ],
+                "filter": {
+                    "name": "aggregate_groth16",
+                    "kind": "bench"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug benchmark 'aggregate_rsa'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bench=aggregate_rsa",
+                    "--package=benches"
+                ],
+                "filter": {
+                    "name": "aggregate_rsa",
+                    "kind": "bench"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug benchmark 'compute_witnesses_rsa'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bench=compute_witnesses_rsa",
+                    "--package=benches"
+                ],
+                "filter": {
+                    "name": "compute_witnesses_rsa",
+                    "kind": "bench"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug benchmark 'update_witness_rsa'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bench=update_witness_rsa",
+                    "--package=benches"
+                ],
+                "filter": {
+                    "name": "update_witness_rsa",
+                    "kind": "bench"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug benchmark 'verify_merkle_paths'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bench=verify_merkle_paths",
+                    "--package=benches"
+                ],
+                "filter": {
+                    "name": "verify_merkle_paths",
+                    "kind": "bench"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
